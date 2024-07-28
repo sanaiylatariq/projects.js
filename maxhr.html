@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="age" id="age">
+    <button onclick="hr()">calculate</button>
+<div id="result"></div>
+<SCRipt>
+function hr(){
+    let age = parseFloat(document.querySelector('#age').value)
+    let n = new Number(220)
+    let r = n-age
+    document.querySelector('#result').textContent = `maximum heart rate is `+r.toFixed(2)+`bpm(beats per minute)`
+}
+
+
+</SCRipt>
+</body>
+</html>

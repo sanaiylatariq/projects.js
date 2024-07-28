@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="radius in m"id=radius>
+   <button onclick="area()">calculate</button>
+   <div id="result">
+    
+   </div> 
+   <script>
+    function area(){
+        let r = parseFloat(document.querySelector('#radius').value)
+        let con = Math.PI*(r*r)
+        document.querySelector('#result').textContent = con.toFixed(2)+` metre square`
+    }
+
+
+
+
+   </script>
+</body>
+</html>

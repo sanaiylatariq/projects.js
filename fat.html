@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="bmi" placeholder="bmi">
+    <input type="number" id="age" placeholder="age">
+    <button onclick="fat()">calculate</button>
+    <div id="result"></div>
+</body>
+<script>
+    // Body Fat Percentage=1.20×BMI+0.23×Age−16.2
+
+
+function fat(){
+    let age = parseFloat(document.querySelector('#age').value)
+    let bmi = parseFloat(document.querySelector('#bmi').value)
+    let n = new Number(1.20)
+    let n1 = new Number(0.23)
+let n2 = new Number(16.2)
+let result = n*bmi+n1*age-n2
+document.querySelector('#result').textContent = `body fat percentage is  `+ result.toFixed(2)+`%`
+}
+
+
+
+</script>
+
+
+</html>
